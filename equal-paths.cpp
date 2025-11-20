@@ -18,7 +18,7 @@ bool equalPathsHelper(Node * root, int current, int &expected)
         return true;
     }
 
-    //base case - leaf nod
+    //base case - leaf node
     if (root->left == NULL && root->right == NULL) {
         if (expected == -1) {
             expected = current;
